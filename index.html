@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Us.timewear | Luxury Watches</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080808;color:white;font-family:Arial,sans-serif}
+header{padding:22px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #333}
+.logo{font-size:22px;font-weight:bold;letter-spacing:2px}
+.logo span{color:#b8a477}
+header a{color:white;text-decoration:none;font-size:13px}
+.hero{text-align:center;padding:55px 20px 35px}
+.hero small{color:#b8a477;letter-spacing:4px}
+h1{font-size:39px;margin:18px 0}
+.hero p{color:#bbb;line-height:1.6}
+.btn{display:inline-block;background:#b8a477;color:#080808;padding:13px 22px;text-decoration:none;font-weight:bold;margin-top:14px;border:0;cursor:pointer}
+section{padding:28px 16px}
+h2{text-align:center;letter-spacing:2px}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#151515;padding:12px;border:1px solid #292929}
+.watch{height:145px;background:radial-gradient(circle,#333,#101010);display:flex;align-items:center;justify-content:center;font-size:76px}
+.card h3{font-size:15px}
+.price{color:#c9b581;font-weight:bold}
+.card p{font-size:12px;color:#bbb}
+.card button{width:100%;padding:11px;background:#b8a477;border:0;font-weight:bold;cursor:pointer}
+footer{text-align:center;padding:25px;color:#aaa;border-top:1px solid #333;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">US<span>.</span>TIMEWEAR</div>
+  <a href="#collection">COLLECTION ↓</a>
+</header>
+<div class="hero">
+  <small>TIMELESS STYLE</small>
+  <h1>Make Every<br>Second Count.</h1>
+  <p>Discover your next statement watch.<br>Style, precision and confidence.</p>
+  <a class="btn" href="#collection">EXPLORE WATCHES</a>
+</div>
+<section id="collection">
+  <h2>OUR COLLECTION</h2>
+  <p style="text-align:center;color:#aaa;font-size:13px">Find the watch that fits your style.</p>
+  <div class="products">
+    <div class="card">
+      <div class="watch">⌚</div>
+      <h3>Silver & Blue</h3>
+      <p>Elegant everyday style</p>
+      <div class="price">PKR 4,999</div>
+      <button onclick="order('Silver & Blue')">ORDER NOW</button>
+    </div>
+    <div class="card">
+      <div class="watch">⌚</div>
+      <h3>Classic Black</h3>
+      <p>A bold, timeless look</p>
+      <div class="price">PKR 3,999</div>
+      <button onclick="order('Classic Black')">ORDER NOW</button>
+    </div>
+    <div class="card">
+      <div class="watch">⌚</div>
+      <h3>Square Edition</h3>
+      <p>Modern square design</p>
+      <div class="price">PKR 5,499</div>
+      <button onclick="order('Square Edition')">ORDER NOW</button>
+    </div>
+    <div class="card">
+      <div class="watch">⌚</div>
+      <h3>Silver Classic</h3>
+      <p>Clean and sophisticated</p>
+      <div class="price">PKR 4,499</div>
+      <button onclick="order('Silver Classic')">ORDER NOW</button>
+    </div>
+  </div>
+</section>
+<footer>
+  <h3>US.TIMEWEAR</h3>
+  <p>YOUR TIME. YOUR STYLE.</p>
+  <p>Contact us to place your order.</p>
+  <p>© 2026 Us.timewear</p>
+</footer>
+<script>
+function order(product){
+ alert("You selected: "+product+
+ "\nPlease contact Us.timewear to confirm price and delivery.");
+}
+</script>
+</body>
+</html>
